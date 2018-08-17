@@ -1,0 +1,6 @@
+framework module Pods_JNU_tong_iOS {
+  umbrella header "Pods-JNU-tong-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
