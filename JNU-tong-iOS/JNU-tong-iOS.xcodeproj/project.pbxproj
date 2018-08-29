@@ -13,6 +13,7 @@
 		4E3D0F0120EFA6D70085D0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D0F0020EFA6D70085D0BC /* Assets.xcassets */; };
 		4E3D0F0420EFA6D70085D0BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D0F0220EFA6D70085D0BC /* LaunchScreen.storyboard */; };
 		4E3D0F0F20EFA6D70085D0BC /* JNU_tong_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D0F0E20EFA6D70085D0BC /* JNU_tong_iOSTests.swift */; };
+		4EF84A1D2136B1F3000D3285 /* APIKey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EF84A1C2136B1F3000D3285 /* APIKey.plist */; };
 		61EFB04D360D0FA395E852FB /* Pods_JNU_tong_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD2E3A3280F82C29F607AA6F /* Pods_JNU_tong_iOSTests.framework */; };
 		FC4F2C515376010767A1F668 /* Pods_JNU_tong_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA933BE69BA297391F720A9 /* Pods_JNU_tong_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		4E3D0F0A20EFA6D70085D0BC /* JNU-tong-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JNU-tong-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E3D0F0E20EFA6D70085D0BC /* JNU_tong_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JNU_tong_iOSTests.swift; sourceTree = "<group>"; };
 		4E3D0F1020EFA6D70085D0BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EF84A1C2136B1F3000D3285 /* APIKey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKey.plist; sourceTree = "<group>"; };
 		9B153DECB8902366D03BB374 /* Pods-JNU-tong-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNU-tong-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JNU-tong-iOS/Pods-JNU-tong-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A58D5F60A588E2E6194953EA /* Pods-JNU-tong-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JNU-tong-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JNU-tong-iOSTests/Pods-JNU-tong-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD2E3A3280F82C29F607AA6F /* Pods_JNU_tong_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JNU_tong_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +91,7 @@
 		4E3D0EF820EFA6D00085D0BC /* JNU-tong-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4E3D0F1B20EFA85D0085D0BC /* Network */,
+				4EF84A1E2136B2C0000D3285 /* Networking */,
 				4E3D0F1A20EFA8130085D0BC /* Supporting Files */,
 				4E3D0F1920EFA7F60085D0BC /* Resources */,
 				4E3D0EFB20EFA6D00085D0BC /* ViewController.swift */,
@@ -118,6 +120,7 @@
 		4E3D0F1A20EFA8130085D0BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4EF84A1C2136B1F3000D3285 /* APIKey.plist */,
 				4E3D0F0520EFA6D70085D0BC /* Info.plist */,
 				4E3D0F0220EFA6D70085D0BC /* LaunchScreen.storyboard */,
 				4E3D0EF920EFA6D00085D0BC /* AppDelegate.swift */,
@@ -125,11 +128,11 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4E3D0F1B20EFA85D0085D0BC /* Network */ = {
+		4EF84A1E2136B2C0000D3285 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Network;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		688CC6D7EB1BE7007E9FF056 /* Pods */ = {
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E3D0F0420EFA6D70085D0BC /* LaunchScreen.storyboard in Resources */,
+				4EF84A1D2136B1F3000D3285 /* APIKey.plist in Resources */,
 				4E3D0F0120EFA6D70085D0BC /* Assets.xcassets in Resources */,
 				4E3D0EFF20EFA6D00085D0BC /* Main.storyboard in Resources */,
 			);
@@ -478,7 +482,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4TX5PVNK4;
 				INFOPLIST_FILE = "JNU-tong-iOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.grohong.JNU-tong-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -494,7 +501,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4TX5PVNK4;
 				INFOPLIST_FILE = "JNU-tong-iOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.grohong.JNU-tong-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -511,7 +521,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4TX5PVNK4;
 				INFOPLIST_FILE = "JNU-tong-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.grohong.JNU-tong-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -529,7 +543,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y4TX5PVNK4;
 				INFOPLIST_FILE = "JNU-tong-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.grohong.JNU-tong-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

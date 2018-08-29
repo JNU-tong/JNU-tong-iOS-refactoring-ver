@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   APIKey.plist
+   JNU-tong-iOS
+
+   Created by Seong ho Hong on 2018. 8. 29..
+   Copyright (c) 2018년 Seong ho Hong. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>ServerIP</key>
+        <string>http://106.10.46.151:8080/</string>
+    </dict>
+</plist>
